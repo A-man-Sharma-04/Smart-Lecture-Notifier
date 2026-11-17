@@ -1,0 +1,4 @@
+import { Clock, MapPin } from 'lucide-react'
+export default function TodayScheduleCard({ items = [] }) {
+  return <section><h2 className="mb-3 text-lg font-semibold text-white">Today’s schedule</h2><div className="space-y-3">{items.length ? items.map((item, i) => <div key={i} className="flex items-center justify-between rounded-xl border border-slate-800 bg-slate-900 p-4"><div><p className="font-medium text-white">{item.subject}</p><p className="mt-1 flex gap-3 text-sm text-slate-400"><span><Clock size={14} className="mr-1 inline" />{item.start}–{item.end}</span><span><MapPin size={14} className="mr-1 inline" />{item.room || 'TBA'}</span></p></div></div>) : <p className="rounded-xl border border-dashed border-slate-700 p-6 text-slate-400">No lectures scheduled today.</p>}</div></section>
+}

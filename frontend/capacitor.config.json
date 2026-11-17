@@ -1,0 +1,7 @@
+{
+  "appId": "com.smartlecturenotifier.app",
+  "appName": "Smart Lecture Notifier",
+  "webDir": "dist",
+  "bundledWebRuntime": false,
+  "server": { "androidScheme": "https" }
+}
